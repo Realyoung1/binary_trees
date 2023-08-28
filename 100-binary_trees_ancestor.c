@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * node_depth - count the levels of the Binary tree
-  * @tree: root node of the BT
-  * Return: Nothing
+  * node_depth - funcs that count the levels of the Binary treess
+  * @tree: roots node of the BT
+  * Return: Nothings
   */
+
 size_t node_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -14,10 +15,11 @@ size_t node_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_depth - measures the depth of a node in a binary tree
-  * @tree: root node of the BT
-  * Return: Nothing
+  * binary_tree_depth - funcs that measures the depths of a node in a binary treess
+  * @tree: rootss node of the BT
+  * Return: Nothings
   */
+
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -27,10 +29,10 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_trees_ancestor -  finds the ancestor of given nodes
-  * @first: first node
-  * @second: second node
-  * Return: ancestor node
+  * binary_trees_ancestor -  funcs that finds the ancestor of given node
+  * @first: first nodess
+  * @second: second nodess
+  * Return: ancestor nodess
   */
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,

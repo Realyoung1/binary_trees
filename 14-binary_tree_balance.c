@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * node_depth - count the levels of the Binary tree
-  * @tree: root node of the BT
+  * node_depth - funcs counting the levels of the Binary trees
+  * @tree: roots node of the BT
   * Return: Nothing
   */
+
 size_t node_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -14,10 +15,11 @@ size_t node_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_depth - measures the depth of a node in a binary tree
+  * binary_tree_depth - funcs measuring the depth of a node in a binary trees
   * @tree: root node of the BT
   * Return: Nothing
   */
+
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -27,9 +29,9 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_height - counts the leaves in a binary tree
-  * @tree: root node of the BT
-  * Return: numbers of leave
+  * binary_tree_height - funcs counting the leaves in a binary treess
+  * @tree: roots node of the BT
+  * Return: numbers of leavess
   */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
@@ -59,10 +61,11 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_balance - measures the balance factor of a binary tree
-  * @tree: root node of the BT
-  * Return: numbers of leave
+  * binary_tree_balance - funcs measuring the balance factor of a binary treess
+  * @tree: roots node of the BT
+  * Return: numbers of leavess
   */
+
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	size_t height_left = 0, height_right = 0;

@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_sibling - finds the sibling of a node
-  * @node: node of the BT
-  * Return: node of the sibling
+  * binary_tree_sibling - funcs findings the siblings of a nodess
+  * @node: nodes of the BT
+  * Return: nodes of the siblingss
   */
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (!node || !(node->parent))

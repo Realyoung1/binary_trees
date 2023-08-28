@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_is_full - checks if a binary tree is full
-  * @tree: root node of the BT
-  * Return: numbers of leave
+  * binary_tree_is_full - funcs checking if a binary tree is fullss
+  * @tree: rootss nodes of the BT
+  * Return: numbers of leavess
   */
+
 int binary_tree_is_full(const binary_tree_t *tree)
 {
 	size_t full_l = 0, full_r = 0, full = 0;

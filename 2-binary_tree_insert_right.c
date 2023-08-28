@@ -1,11 +1,12 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_insert_right - Insert a node on right of Binary tree
-  * @parent: node parent
-  * @value: key to insert in the new node
-  * Return: the address of the new node
+  * binary_tree_insert_right - funcs Inserting a node on right of Binary treess
+  * @parent: nodes parentss
+  * @value: keys to insert in the new nodess
+  * Return: the address of thes new nodess
   */
+
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 	binary_tree_t *newright_node = NULL;

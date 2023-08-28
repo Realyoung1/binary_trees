@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_is_leaf - Check if a node is a leaf
-  * @node: node of the BT
+  * binary_tree_is_leaf - funcs Checking if the bnode is a leafss
+  * @node: nodess of the BT
   * Return: 1 if a node is a leaf otherwise 0
   */
+
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	if (!node)

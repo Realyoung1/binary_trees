@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * node_depth - count the levels of the Binary tree
-  * @tree: root node of the BT
+  * node_depth - funcs counting the levels of the Binary treess
+  * @tree: roots nodes of the BT
   * Return: Nothing
   */
+
 size_t node_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -14,10 +15,11 @@ size_t node_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_depth - measures the depth of a node in a binary tree
-  * @tree: root node of the BT
+  * binary_tree_depth - funcs measuring the depth of a node in a binary treess
+  * @tree: roots node of the BT
   * Return: Nothing
   */
+
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -27,10 +29,11 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 }
 
 /**
-  * BT_perfect - checks if a binary tree is perfect
+  * BT_perfect - funcs that checks if a binary tree is perfect
   * @tree: root node of the BT
   * Return: numbers of leave
   */
+
 int BT_perfect(const binary_tree_t *tree)
 {
 	size_t perfect_left = 0, perfet_right = 0, perfect = 0;
@@ -53,10 +56,11 @@ int BT_perfect(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_is_perfect - checks if a binary tree is perfect
+  * binary_tree_is_perfect - funcs that checks if a binary tree is perfect
   * @tree: root node of the BT
   * Return: numbers of leave
   */
+
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (!tree)

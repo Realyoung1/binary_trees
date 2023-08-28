@@ -1,10 +1,11 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_is_complete - checks if a binary tree is complete
-  * @tree: root node of the BT
+  * binary_tree_is_complete - funcs checking if a binary tree is completes
+  * @tree: roots nodes of the BT
   * Return: 1 if is complete otherwise 0
   */
+
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	size_t comp_l = 0, comp_r = 0, comp = 0;

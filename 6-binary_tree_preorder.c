@@ -12,7 +12,7 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_preorder - funcs that Goes through a binary treess using pre-order
+  * binary_tree_preorder - funcs that Goes through a binary treess using.
   * @tree: rootss node of the BT
   * @func: functionss to print the traverses
   * Return: Nothings

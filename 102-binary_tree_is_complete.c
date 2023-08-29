@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_is_complete - funcs checking if a binary tree is completes
+  * binary_tree_is_complete - funcs checking if a binary tree.
   * @tree: roots nodes of the BT
   * Return: 1 if is complete otherwise 0
   */

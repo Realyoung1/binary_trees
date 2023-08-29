@@ -12,7 +12,7 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_nodes - funcs counting the nodes withs at leasts 1 child in a BT
+  * binary_tree_nodes - funcs counting the nodes withs at leasts 1 childs
   * @tree: root nodes of the BT
   * Return: numbers of leaves
   */

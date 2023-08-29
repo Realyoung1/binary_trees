@@ -54,7 +54,7 @@ int height(binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_levelorder - funcs that goes through abinarytreeusinglevel-ordertraversal
+  * binary_tree_levelorder - funcs for abinarytreeusinglevel-ordertraversal
   * @tree: rootss node of the BT
   * @func: functions to print the traverse
   * Return: Nothing

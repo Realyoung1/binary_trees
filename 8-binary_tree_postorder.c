@@ -1,4 +1,3 @@
-
 #include <stdbool.h>
 #include <sys/stat.h>
 #include <limits.h>
@@ -13,7 +12,7 @@
 #include "binary_trees.h"
 
 /**
-  * binary_tree_postorder - funcs that Goest via a binary tree using post-order traversalss
+  * binary_tree_postorder - funcs that Goest via a binary tree using..
   * @tree: roots nodess of the BT
   * @func: functions to prints the traverses
   * Return: Nothing

@@ -1,3 +1,14 @@
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
 #include "binary_trees.h"
 
 /**
@@ -15,7 +26,7 @@ size_t node_depth(const binary_tree_t *tree)
 }
 
 /**
-  * binary_tree_depth - funcs that measures the depths of a node in a binary trees
+  * binary_tree_depth - funcs that measures the depths of a node in a BT
   * @tree: roots node of the BT
   * Return: Nothing
   */

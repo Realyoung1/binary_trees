@@ -14,7 +14,7 @@
 /* Original code from http://stackoverflow.com/a/13755911/5184480 */
 
 /**
- * print_t - Stores recursively each level in an array of strings
+ * print_t - funcs that Stores recursively each level in an array of strings
  *
  * @tree: Pointer to the node to print
  * @offset: Offset to print
@@ -23,10 +23,11 @@
  *
  * Return: length of printed tree after process
  */
+
 static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 {
 	char b[6];
-	int width, left, right, is_left, i;
+	int width, left, right, is_left, q;
 
 	if (!tree)
 		return (0);
@@ -34,18 +35,18 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 	width = sprintf(b, "(%03d)", tree->n);
 	left = print_t(tree->left, offset, depth + 1, s);
 	right = print_t(tree->right, offset + left + width, depth + 1, s);
-	for (i = 0; i < width; i++)
-		s[depth][offset + left + i] = b[i];
+	for (q = 0; q < width; q++)
+		s[depth][offset + left + q] = b[q];
 	if (depth && is_left)
 	{
-		for (i = 0; i < width + right; i++)
-			s[depth - 1][offset + left + width / 2 + i] = '-';
+		for (q = 0; q < width + right; q++)
+			s[depth - 1][offset + left + width / 2 + q] = '-';
 		s[depth - 1][offset + left + width / 2] = '.';
 	}
 	else if (depth && !is_left)
 	{
-		for (i = 0; i < left + width; i++)
-			s[depth - 1][offset - width / 2 + i] = '-';
+		for (q = 0; q < left + width; q++)
+			s[depth - 1][offset - width / 2 + q] = '-';
 		s[depth - 1][offset + left + width / 2] = '.';
 	}
 	return (left + width + right);
@@ -76,7 +77,7 @@ static size_t _height(const binary_tree_t *tree)
 void binary_tree_print(const binary_tree_t *tree)
 {
 	char **s;
-	size_t height, i, j;
+	size_t height, q, w;
 
 	if (!tree)
 		return;
@@ -84,24 +85,24 @@ void binary_tree_print(const binary_tree_t *tree)
 	s = malloc(sizeof(*s) * (height + 1));
 	if (!s)
 		return;
-	for (i = 0; i < height + 1; i++)
+	for (q = 0; q < height + 1; q++)
 	{
-		s[i] = malloc(sizeof(**s) * 255);
-		if (!s[i])
+		s[q] = malloc(sizeof(**s) * 255);
+		if (!s[q])
 			return;
-		memset(s[i], 32, 255);
+		memset(s[q], 32, 255);
 	}
 	print_t(tree, 0, 0, s);
-	for (i = 0; i < height + 1; i++)
+	for (q = 0; q < height + 1; q++)
 	{
-		for (j = 254; j > 1; --j)
+		for (w = 254; w > 1; --w)
 		{
-			if (s[i][j] != ' ')
+			if (s[q][w] != ' ')
 				break;
-			s[i][j] = '\0';
+			s[q][w] = '\0';
 		}
-		printf("%s\n", s[i]);
-		free(s[i]);
+		printf("%s\n", s[q]);
+		free(s[w]);
 	}
 	free(s);
 }

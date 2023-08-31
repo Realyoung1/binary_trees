@@ -13,7 +13,7 @@
 #include <errno.h>
 #include <stdlib.h>
 
-#ifndef BINARY_TREES_H
+
 
 
 /**

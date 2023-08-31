@@ -1,10 +1,23 @@
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
 #include "binary_trees.h"
+
 /**
- * bst_insert - inserts a value in a Binary Search Tree.
- * @tree: double pointer to the root node of the BST to insert the value.
- * @value: value to store in the node to be inserted.
+ * bst_insert - inserteds a value in a Binary earch Treess
+ * @tree: double pointerss to the root node of the BST to insert the valuees
+ * @value: value to store in the node to be insertess
  * Return: Always 0 (Success)
  */
+
 bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *aux = NULL;

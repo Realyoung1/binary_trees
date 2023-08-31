@@ -1,3 +1,14 @@
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
 #include "binary_trees.h"
 
 size_t height(const binary_tree_t *tree);
@@ -12,6 +23,7 @@ avl_t *avl_insert(avl_t **tree, int value);
  *
  * Return: If tree is NULL, your function must return 0, else return height.
  */
+
 size_t height(const binary_tree_t *tree)
 {
 	if (tree != NULL)
@@ -31,6 +43,7 @@ size_t height(const binary_tree_t *tree)
  *
  * Return: If tree is NULL, return 0, else return balance factor.
  */
+
 int balance(const binary_tree_t *tree)
 {
 	return (tree != NULL ? height(tree->left) - height(tree->right) : 0);
@@ -94,6 +107,7 @@ avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
  *
  * Return: A pointer to the inserted node, or NULL on failure.
  */
+
 avl_t *avl_insert(avl_t **tree, int value)
 {
 	avl_t *new = NULL;

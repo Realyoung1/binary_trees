@@ -1,12 +1,25 @@
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
 #include "binary_trees.h"
+
 /**
- * aux_sort - create the tree using the half element of the array
+ * aux_sort - create the tree using the half
  * @parent: parent of the node to create
  * @array: sorted array
  * @begin: position where the array starts
  * @last: position where the array ends
  * Return: tree created
  */
+
 avl_t *aux_sort(avl_t *parent, int *array, int begin, int last)
 {
 	avl_t *root;
@@ -26,12 +39,14 @@ avl_t *aux_sort(avl_t *parent, int *array, int begin, int last)
 	}
 	return (NULL);
 }
+
 /**
- * sorted_array_to_avl - create a alv tree from sorted array
+ * sorted_array_to_avl - create a alv tree from
  * @array: sorted array
  * @size: size of the sorted array
  * Return: alv tree form sorted array
  */
+
 avl_t *sorted_array_to_avl(int *array, size_t size)
 {
 	if (array == NULL || size == 0)
